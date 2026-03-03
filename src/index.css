@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-space-bg: #020205;
+  --color-cyan: #00f3ff;
+  --color-cyan-dim: #00f3ff33;
+  --color-gold: #ffc107;
+  --color-gold-dim: #ffc10733;
+  --color-success: #00e676;
+  --color-failure: #ff1744;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--color-space-bg);
+  font-family: "JetBrains Mono", "Fira Code", "Cascadia Code", monospace;
+  color: var(--color-cyan);
+}
