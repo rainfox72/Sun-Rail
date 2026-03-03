@@ -36,6 +36,14 @@ npx tsc --noEmit     # Type check (zero errors policy)
 - `TIME_SPEEDS: [1, 50, 100, 1000]`
 - Camera: far=500, maxDistance=250 (needed for outer planets)
 
+## Internal Docs
+
+Internal development docs (task tracker, design plans, legacy instructions) live in `.claude/docs/` — gitignored but locally accessible to Claude Code. Do NOT commit internal plans or task trackers to the public repo.
+
+- `.claude/docs/TASKS.md` — Phase-based task tracker
+- `.claude/docs/plans/` — Design docs and implementation plans
+- `.claude/docs/CLAUDE_INSTRUCTIONS_LEGACY.md` — Original v1 project instructions (superseded by this file)
+
 ## Gotchas
 
 - Billboard from drei rotates children to face camera — setting position on a mesh inside Billboard places it at a rotated world position. Always use a parent group for positioning.
